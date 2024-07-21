@@ -1,0 +1,60 @@
+.main_ {
+    height: 100vh;
+    background-color: #E6E2DC;
+    /* overflow: hidden; */
+  }
+  
+  .signupForm {
+    background:   #403828;;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 100px;
+  }
+
+.container h2 {
+  margin-left: -18px; /* Adjust this value to reduce the gap */ 
+  font-size: 30px;
+  color: #E6E2DC;
+}
+  
+.navbar {
+  font-family: "Taviraj", serif;
+  font-weight: 200;
+  font-style: normal;
+  background:  #403828;
+  
+  }
+  
+  .nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #E6E2DC;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  }
+  
+  .nav-link:hover:after {
+  width: 100%;
+  }
+  
+  #signUpBtn{
+    background-color: #E6E2DC;
+    color: #403828;
+  }
+
+  
+@media (max-width: 768px) {
+  
+  .Logimg {
+    display: none;
+  }
+  .login-form{
+    vertical-align: middle;
+    margin-top: 120px;
+  }
+}

@@ -1,0 +1,167 @@
+body {
+  background-color: #e6e2dc;
+  font-family: "Poppins", sans-serif;
+  color: #4B2E20;
+}
+
+header {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  font-family: "Taviraj", serif;
+  font-style: normal;
+  color: #4B2E20;
+}
+
+.navbar a {
+  color: #4B2E20;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #4B2E20;
+  display: block;
+  margin: auto;
+  transition: width 0.5s;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.About {
+  background-color: #352F22;
+  height: 30%;
+  color: #e6e2dc;
+}
+
+.About-Us {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 60px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.Our-Vision {
+  margin-top: 70px;
+  margin-left: 150px;
+  line-height: 30px;
+}
+
+.Our-Vision h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  animation: slideIn 1s ease-out;
+}
+
+.card {
+  border: none;
+  animation: cardFadeIn 4s ease-in-out;
+  background-color: #352F22;
+  color: #e6e2dc;
+  border-radius: 20px;
+}
+
+.Our-Story {
+  margin-top: 60px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes cardFadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Logo Animation */
+.logo-animation {
+  animation: rotateLogo 3s linear infinite;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .About-Us {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    font-size: 1.2rem;
+  }
+  .About-Us {
+    font-size: 40px;
+  }
+  .Our-Vision {
+    margin-left: 100px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+  }
+  .About-Us {
+    font-size: 30px;
+    text-align: center;
+  }
+  .Our-Vision {
+    margin-left: 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .nav-link {
+    font-size: 1rem;
+  }
+  .About-Us {
+    font-size: 25px;
+  }
+  .Our-Vision {
+    font-size: 0.8rem;
+  }
+  .Our-Story {
+    margin-top: 40px;
+    font-size: 0.9rem;
+  }
+}

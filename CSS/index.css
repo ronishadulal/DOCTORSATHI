@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C6BBAE;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  height: 100vh;
+}
+
+.part-section {
+  position: relative;
+  background-image: url("https://cdn.cpdonline.co.uk/wp-content/uploads/2022/09/13092522/Becoming-a-hospital-doctor.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.part-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(210, 180, 140, 0.5);
+  z-index: 1;
+}
+
+.part-section * {
+  position: relative;
+  z-index: 2;
+}
+
+.part-section h1, .part-section p {
+  color: #4B2E20;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.part-section a button, #btnColor {
+  background-color: #4B2E20;
+  color: #E6E2DC;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.part-section a button:hover {
+  background-color: #E6E2DC;
+  color: #403828;
+  transform: scale(1.05);
+}
+
+.card-body {
+  color: #403828;
+  background-color: whitesmoke;
+}
+
+.card-body button {
+  color: #E6E2DC;
+  background-color: #352F22;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card-body button:hover {
+  background-color: #4B2E20;
+  transform: translateY(-2px);
+}
+
+.navbar {
+  font-family: "Taviraj", serif;
+  font-weight: 200;
+  font-style: normal;
+  background-color: #403828;
+  color: #E6E2DC;
+}
+
+#color {
+  color: #E6E2DC;
+ 
+}
+
+#Service {
+  background-color: #E6E2DC;
+}
+
+footer {
+  background-color: #403828;
+  color: #E6E2DC;
+}
+
+#social {
+  background-color: #E6E2DC;
+  color: #403828;
+}
+
+.copyright {
+  background-color: #352F22;
+}
+
+.card-body {
+  background-color: #403828;
+  color: #E6E2DC;
+}
+
+.card-body button {
+  background-color: #E6E2DC;
+  color: #352F22;
+}
+
+.Welcome-Heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 67px;
+  font-style: normal;
+  color: #352F22;
+  padding-top: 70PX;
+ 
+  
+}
+
+#text {
+  color: #403828;
+  background-color: #E6E2DC;
+  padding: 10px;
+}
+
+#text h4, #text p {
+  color: #403828;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode-toggle {
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.dark-mode-toggle button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #E6E2DC;
+  display: block;
+  margin: auto;
+  transition: width 0.5s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.container h2 {
+  margin-left: -18px;
+  color: #4B2E20;
+}
+
+.Login-button {
+  background-color: #4B2E20;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Login-button:hover {
+  background-color: #3a2418;
+}
+
+h1 {
+  font-size: 77px;
+  color: #4B2E20;
+}
+
+p {
+  font-size: 25px;
+  font-family: "Mukta Vaani", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #333333;
+}
+
+.our-Service {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #4B2E20;
+  margin-top: 160px;
+}
+
+.BMI {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #4B2E20;
+}
+
+.BMI-P {
+  font-family: "Mukta Vaani", sans-serif;
+  font-style: normal;
+  color: #333333;
+}
+
+.col-sm-6 img {
+  margin-top: 50px;
+}
+
+.bttn {
+  background-color: #4B2E20;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.bttn:hover {
+  background-color: #3a2418;
+  transform: translateY(-2px);
+}
+
+.hero-img {
+  width: 750px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #4B2E20;
+}
+
+span {
+  margin-left: -18px;
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.hover-effect.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.hover-effect:hover.card-img-top {
+  transform: scale(1.05);
+}
+
+.row-cols-1 > * {
+  display: flex;
+}
+
+.row-cols-1.card {
+  flex: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex: 1;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+  .Welcome-Heading {
+    font-size: 45px;
+    font-weight: 500;
+  }
+  .p {
+    font-size: 1rem;
+  }
+  .card-title {
+    font-size: 0.8rem;
+  }
+  .BMI,
+  .BMI-P {
+    font-size: 0.4rem;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+}
+

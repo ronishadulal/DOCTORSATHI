@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main{
+  background-color:  #E6E2DC;
+  
+  font-family: "Taviraj", serif;
+  line-height: 1.6;
+  color: #3e2723;
+}
+header {
+  height: 100vh;
+}
+.nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background:  #3e2723;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
+.container h2 {
+  margin-left: -18px; /* Reduce gap betweeen logo and Vcare */
+}
+
+h2 {
+  font-size: 30px;
+}
+
+span {
+  margin-left: -18px;
+}
+
+.upperFooter {
+  height: 200px;
+  background-color: #333;
+}
+
+
+
+.Medicine {
+  position: relative;
+  background: rgba(255, 255, 255, 0.9) ;
+  height: 80%;
+  box-shadow: 3px 5px 15px #333;
+  background-repeat: no-repeat;
+  background-image: url("/Images/Medicine/medicineimg.jpg");
+  background-size: cover;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures the pseudo-element is contained within the card */
+}
+
+.Medicine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(139, 69, 19, 0.5); /* Semi-transparent brownish shade */
+  z-index: 1;
+}
+
+.Medicine * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: #E6E2DC;
+  font-family: "Taviraj", serif;
+  line-height: 1.6;
+  color: #3e2723;
+}
+
+.upperFooter {
+  height: 200px;
+  background-color: #403828;
+}
+
+.social-connect,
+.copyright {
+  background-color: #2E291E;
+  color: #E6E2DC;
+}
+.foot{
+  background-color: #403828;
+  color: #E6E2DC;
+}
+
+#btnColor{
+  background-color: #E6E2DC;
+  color: #2E291E;
+  border: 1px solid #2E291E;
+}
+#btnColor:hover{
+  background-color: #2E291E ;
+  color: #E6E2DC;
+
+}
+.brownbtn{
+  background-color: #2E291E ;
+  color: #E6E2DC;
+
+}
+
+.brownbtn:hover{
+  background-color: #E6E2DC;
+  color: #2E291E;
+  border: 1px solid #2E291E;
+
+}

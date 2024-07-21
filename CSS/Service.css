@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* You can change this to any preferred font */
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.card-body {
+    background-color: #E6E2DC;
+    border-radius: 10%;
+    padding: 40px;
+    box-shadow: 0 0 10px #4B2E20, /* shadow for all four sides */
+                0 0 20px #4B2E20, 
+                0 0 30px #4B2E20, 
+                0 0 40px #4B2E20;
+}
+
+.virtual-consultation-container {
+    background-color: #C6BBAE;
+}
+
+/* Service Header */
+.Service .Service-text {
+    color: #4B2E20;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Service Details Container */
+.Details .row {
+    margin-bottom: 30px;
+}
+
+.virtual-consultation-container {
+    background-color: #E6E2DC;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.virtual-consultation-container h3 {
+    color: #4B2E20;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.virtual-consultation-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Hover Effects */
+.virtual-consultation-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    font-family: "Taviraj", serif;
+    font-style: normal;
+}
+
+body {
+    background-color: #C6BBAE;
+}
+
+.nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #4B2E20;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.container h2 {
+    margin-left: -18px; /* Adjust this value to reduce the gap */
+}
+
+.Service {
+    margin-left: 140px;
+}
+
+.Details {
+    margin-left: 145px;
+}
+
+.virtual-consultation-container {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: none;
+}
+
+.Virtual-Consul {
+    margin-top: 100px;
+}
+
+.Service-text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.virtual-consultation-container h3 {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.virtual-consultation-container p {
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    line-height: 27px;
+    font-size: 17px;
+}
+
+.container-fluid {
+    background: linear-gradient(
+      180deg,
+      rgba(201, 241, 255, 0.188) 0%,
+      rgba(211, 239, 248, 0.208) 100%
+    );
+}
+
+.card {
+    background: none;
+}
+
+.card-text {
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    line-height: 25px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .Service {
+        margin-left: 100px;
+    }
+    .Details {
+        margin-left: 105px;
+    }
+}
+
+@media (max-width: 992px) {
+    .Service .Service-text {
+        font-size: 2rem;
+    }
+    .Service {
+        margin-left: 50px;
+    }
+    .Details {
+        margin-left: 55px;
+    }
+    .virtual-consultation-container h3 {
+        font-size: 1.2rem;
+    }
+    .virtual-consultation-container p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Service .Service-text {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .Service, .Details {
+        margin-left: 0;
+        text-align: center;
+    }
+    .virtual-consultation-container {
+        padding: 15px;
+        margin: 10px 0;
+    }
+    .virtual-consultation-container h3 {
+        font-size: 1rem;
+    }
+    .virtual-consultation-container p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .Service .Service-text {
+        font-size: 1.2rem;
+    }
+    .virtual-consultation-container {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    .virtual-consultation-container h3 {
+        font-size: 0.9rem;
+    }
+    .virtual-consultation-container p {
+        font-size: 0.7rem;
+    }
+    .Virtual-Consul {
+        margin-top: 50px;
+    }
+    .container h2 {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}

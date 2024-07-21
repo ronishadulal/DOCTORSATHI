@@ -1,0 +1,220 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font Sizes */
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+/* Navbar Link Styles */
+.nav-link::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #2E291E;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Container Styles */
+.container {
+  padding: 0 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  margin-left: -18px; /* Adjust this value to reduce the gap */
+}
+
+/* Medical History Container */
+.medical-history-container {
+  background-color: #E6E2DC;
+  width: 100%;
+  max-width: 1300px;
+  border-radius: 40px;
+  display: flex;
+  padding: 40px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.date {
+  width: 50%;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 20px;
+}
+
+.right {
+  margin-left: 20px;
+}
+
+.date h3, .date p {
+  display: inline;
+}
+
+/* Doctor Details */
+.doctor-details {
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  border-radius: 24px;
+  padding: 10px;
+  text-decoration: none;
+  color: #2E291E;
+}
+
+.doctor-image img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* View More Button */
+.view-more-button {
+  color: #2E291E;
+  text-decoration: none;
+  align-self: flex-end;
+}
+
+.view-more-button:hover {
+  color: #2E291E;
+}
+
+/* About Section */
+.About {
+  background: #e5e3f745;
+  padding: 40px 20px;
+}
+
+.About-Us {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 60px;
+  font-style: normal;
+  text-align: center;
+}
+
+/* Footer Styles */
+.social-connect,
+.copyright {
+  background-color: #2E291E;
+  color: #E6E2DC;
+}
+
+footer {
+  background-color: #403828;
+  color: #E6E2DC;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Brown Button Styles */
+.brownbtn {
+  background-color: #2E291E;
+  color: #E6E2DC;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.brownbtn:hover {
+  background-color: #E6E2DC;
+  color: #2E291E;
+  border: 1px solid #2E291E;
+}
+
+/* Heading Color */
+.Hcolor {
+  width: 100%;
+  background-color: #403828;
+  color: #E6E2DC;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .medical-history-container {
+    padding: 30px;
+  }
+
+  .About-Us {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .left, .right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .right {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .doctor-details {
+    max-width: 100%;
+  }
+
+  .About-Us {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .medical-history-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left, .right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .right {
+    margin-top: 20px;
+  }
+
+  .doctor-details {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .About-Us {
+    font-size: 25px;
+  }
+}

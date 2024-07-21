@@ -1,0 +1,116 @@
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(240, 230, 220, 0.8) 0%, /* Light coffee shade */
+    rgba(198, 187, 174, 0.8) 100%  /* Dark coffee shade */
+  );
+  font-family: "Mukta Vaani", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+header {
+  height: 100vh;
+}
+.navbar{
+  font-family: "Taviraj", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.nav-link::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #2E291E;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-link:hover:after{
+  width: 100%;
+}
+
+.container h2 {
+  margin-left: -18px; /* Adjust this value to reduce the gap */ 
+}
+
+.hero-img {
+  width: 750px;
+}
+
+/* Vcare font */
+h2 {
+  font-size: 30px;
+}
+
+span {
+  margin-left: -18px;
+}
+
+.upperFooter {
+  height: 200px;
+  background-color:  #403828;
+}
+.Hospital {
+  background-image: url("../Images/Hospital/blur-hospital.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: rgb(228, 241, 245); */
+  height: 80%;
+  box-shadow: 3px 5px 15px #333;   
+}
+.Visit-Hospital{
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 60px;
+}
+.card-text{
+  font-family: "Mukta Vaani", sans-serif;
+  font-style: normal;
+}
+.card-title{
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.social-connect,#btnColor, .copyright{
+  background-color: #2E291E;
+  color:#E6E2DC ;
+}
+
+footer{
+  background-color: #403828;
+  color: #E6E2DC;
+}
+.brownbtn{
+  background-color: #2E291E ;
+  color: #E6E2DC;
+
+}
+
+.brownbtn:hover{
+  background-color: #E6E2DC;
+  color: #2E291E;
+  border: 1px solid #2E291E;
+
+}
+
+#apply{
+  color: #2E291E;
+  background-color: #E6E2DC;
+}
